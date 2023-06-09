@@ -1,0 +1,33 @@
+{
+  "name": "bevyengine-snippets",
+  "icon": "icon.png",
+  "displayName": "BevyEngine Snippets",
+  "description": "BevyEngine snippets written for myself",
+  "version": "0.0.1",
+  "keywords": [
+    "rust",
+    "bevy",
+    "bevy engine",
+    "snippets"
+  ],
+  "license": "MIT",
+  "publisher": "rendaoer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rendaoer/bevy-snippets"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "rust",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
