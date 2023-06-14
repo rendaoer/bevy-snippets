@@ -76,5 +76,63 @@
   "Mut Commands": {
     "prefix": "mut commands",
     "body": "mut commands: Commands"
+  },
+  "Res AssetServer": {
+    "prefix": "res asset",
+    "body": "${0}: Res<AssetServer>"
+  },
+  "Res TextureAtlas": {
+    "prefix": "res texture atlas",
+    "body": "mut ${0}: ResMut<Assets<TextureAtlas>>"
+  },
+  "Res State": {
+    "prefix": "res state",
+    "body": "${1}: Res<State<${0}>>"
+  },
+  "Res NextState": {
+    "prefix": "res nextstate",
+    "body": "mut ${1}: ResMut<NextState<{0}>>"
+  },
+  "Query": {
+    "prefix": "query",
+    "body": "Query<${1},${0}>"
+  },
+  "Query Only": {
+    "prefix": "query only",
+    "body": "Query<${0}>"
+  },
+  "Run in State": {
+    "prefix": "run instate",
+    "body": "run_if(in_state(${0}))"
+  },
+  "Event Reader": {
+    "prefix": "event reader",
+    "body": "mut ${1}: EventReader<${0}>,"
+  },
+  "Event Write": {
+    "prefix": "event wirte",
+    "body": "mut ${1}: EventWriter<${0}>"
+  },
+  "Event Handle": {
+    "prefix": "event handle",
+    "body": ["for ${0} in ${1}.iter() {\n", "}"]
+  },
+  "Add System": {
+    "prefix": "add system",
+    "body": [
+      "fn ${2}(mut commands: Commands) {",
+      "\tcommands.spawn((${1}, ${0}));",
+      "}"
+    ]
+  },
+  "Add System Insert": {
+    "prefix": "add system insert",
+    "body": [
+      "fn ${1}(mut commands: Commands) {",
+      "\tcommands",
+      "\t\t.spawn()",
+      "\t\t.insert(${System});",
+      "}"
+    ]
   }
 }
