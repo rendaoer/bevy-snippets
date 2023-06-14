@@ -3,7 +3,7 @@
   "icon": "icon.png",
   "displayName": "BevyEngine Snippets",
   "description": "BevyEngine snippets written for myself",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [
     "rust",
     "bevy",
