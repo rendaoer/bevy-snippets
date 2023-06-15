@@ -2,7 +2,7 @@
   "name": "bevyengine-snippets",
   "icon": "icon.png",
   "displayName": "BevyEngine Snippets",
-  "description": "BevyEngine snippets written for myself",
+  "description": "Some common BevyEngine snippets that I've found to be effective",
   "version": "1.0.0",
   "keywords": [
     "rust",
@@ -26,7 +26,27 @@
     "snippets": [
       {
         "language": "rust",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/inits.code-snippets"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/components.code-snippets"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/spawns.code-snippets"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/params.code-snippets"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/events.code-snippets"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/others.code-snippets"
       }
     ]
   }

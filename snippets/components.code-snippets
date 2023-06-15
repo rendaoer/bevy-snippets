@@ -1,0 +1,20 @@
+{
+  "Component Struct": {
+    "prefix": "component struct",
+    "body": ["#[derive(Component)]", "struct ${1} {", "\t${0},", "}"]
+  },
+  "Component Enum": {
+    "prefix": "component enum",
+    "body": ["#[derive(Component)]", "enum ${1} {", "\t${0},", "}"]
+  },
+  "State Enum": {
+    "prefix": "state enum",
+    "body": [
+      "#[derive(States, Default, Debug, Hash, PartialEq, Eq, Clone)]",
+      "enum ${1} {",
+      "\t#[default]",
+      "\t${0},",
+      "}"
+    ]
+  }
+}

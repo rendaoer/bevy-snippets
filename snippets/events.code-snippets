@@ -1,0 +1,14 @@
+{
+  "Event Reader": {
+    "prefix": "event reader",
+    "body": "mut ${1}: EventReader<${0}>,"
+  },
+  "Event Write": {
+    "prefix": "event wirte",
+    "body": "mut ${1}: EventWriter<${0}>"
+  },
+  "Event Handle": {
+    "prefix": "event handle",
+    "body": ["for ${0} in ${1}.iter() {\n", "}"]
+  }
+}

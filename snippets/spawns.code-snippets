@@ -1,0 +1,97 @@
+{
+  "Commands Spawn Node": {
+    "prefix": "spawn node",
+    "body": [
+      "commands.spawn(NodeBundle {",
+      "\tstyle: Style {",
+      "\t\tsize: Size::new(${2}, ${1}),",
+      "\t\t..default()",
+      "\t},",
+      "\tbackground_color: BackgroundColor(${0}),",
+      "\t..default()",
+      "});"
+    ]
+  },
+  "Commands Spawn Node Flex": {
+    "prefix": "spawn node flex",
+    "body": [
+      "commands.spawn(NodeBundle {",
+      "\tstyle: Style {",
+      "\t\tsize: Size::new(${2}, ${1}),",
+      "\t\tdisplay: Display::Flex,",
+      "\t\t..default()",
+      "\t},",
+      "\tbackground_color: BackgroundColor(${0}),",
+      "\t..default()",
+      "});"
+    ]
+  },
+  "Commands Spawn Button": {
+    "prefix": "spawn button",
+    "body": [
+      "commands.spawn(",
+      "\tButtonBundle {",
+      "\t\tbutton: Button,",
+      "\t\tstyle: Style {",
+      "\t\t\tsize: Size::new(${2}, ${1}),",
+      "\t\t\tdisplay: Display::Flex,",
+      "\t\t\tjustify_content: JustifyContent::Center,",
+      "\t\t\talign_items: AlignItems::Center,",
+      "\t\t\t..default()",
+      "\t\t},",
+      "\t\tbackground_color: BackgroundColor(${0}),",
+      "\t\t..default()",
+      "\t}",
+      ");"
+    ]
+  },
+  "Commands Spawn Button Image": {
+    "prefix": "spawn button image",
+    "body": [
+      "commands.spawn(",
+      "\tButtonBundle {",
+      "\t\tbutton: Button,",
+      "\t\timage: UiImage {",
+      "\t\t\ttexture: ${3},",
+      "\t\t\t..default()",
+      "\t\t},",
+      "\t\tstyle: Style {",
+      "\t\t\tsize: Size::new(${2}, ${1}),",
+      "\t\t\tdisplay: Display::Flex,",
+      "\t\t\tjustify_content: JustifyContent::Center,",
+      "\t\t\talign_items: AlignItems::Center,",
+      "\t\t\t..default()",
+      "\t\t},",
+      "\t\tbackground_color: BackgroundColor(${0}),",
+      "\t\t..default()",
+      "\t}",
+      ");"
+    ]
+  },
+  "Commands Spawn Text Section": {
+    "prefix": "spawn text section",
+    "body": [
+      "commands.spawn(TextBundle::from_section(",
+      "\t${3},",
+      "\tTextStyle {",
+      "\t\tfont: ${2},",
+      "\t\tfont_size: ${1},",
+      "\t\tcolor: ${0},",
+      "\t},",
+      "));"
+    ]
+  },
+  "Commands Spawn Sprite": {
+    "prefix": "spawn sprite",
+    "body": [
+      "commands.spawn(SpriteBundle {",
+      "\ttexture: ${1},",
+      "\ttransform: Transform {",
+      "\t\ttranslation: Vec3::default(),",
+      "\t\t..default()",
+      "\t},",
+      "\t..default()",
+      "});"
+    ]
+  }
+}

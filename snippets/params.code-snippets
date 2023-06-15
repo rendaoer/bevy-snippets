@@ -1,0 +1,38 @@
+{
+  "Mut Commands": {
+    "prefix": "mut commands",
+    "body": "mut commands: Commands"
+  },
+  "Res": {
+    "prefix": "res",
+    "body": "${1}: Res<${0}>"
+  },
+  "Res AssetServer": {
+    "prefix": "res asset",
+    "body": "${0}: Res<AssetServer>"
+  },
+  "Res TextureAtlas": {
+    "prefix": "res texture atlas",
+    "body": "mut ${0}: ResMut<Assets<TextureAtlas>>"
+  },
+  "Res State": {
+    "prefix": "res state",
+    "body": "${1}: Res<State<${0}>>"
+  },
+  "Res NextState": {
+    "prefix": "res nextstate",
+    "body": "mut ${1}: ResMut<NextState<{0}>>"
+  },
+  "Res Input KeyCode": {
+    "prefix": "res keycode",
+    "body": "kb: Res<Input<KeyCode>>"
+  },
+  "Query": {
+    "prefix": "query",
+    "body": "Query<${1},${0}>"
+  },
+  "Query Only": {
+    "prefix": "query only",
+    "body": "Query<${0}>"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "Run in State": {
+    "prefix": "run instate",
+    "body": "run_if(in_state(${0}))"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "Use Bevy prelude": {
+    "prefix": "use bevy prelude",
+    "body": "use bevy::prelude::*;"
+  },
+  "App Init": {
+    "prefix": "app init",
+    "body": [
+      "use bevy::prelude::*;",
+      "fn main() {",
+      "\tApp::new()",
+      "\t\t.add_plugins(DefaultPlugins)",
+      "\t\t.run()"
+    ]
+  },
+  "App 2D Init": {
+    "prefix": "app2 init",
+    "body": [
+      "use bevy::prelude::*;",
+      "fn main() {",
+      "\tApp::new()",
+      "\t\t.add_plugins(DefaultPlugins)",
+      "\t\t.add_startup_system(setup_system)",
+      "\t\t.run()",
+      "}\n",
+      "fn setup_system(mut commands: Commands) {",
+      "\tcommands.spawn(Camera2dBundle::default());",
+      "}"
+    ]
+  },
+  "App 3D Init": {
+    "prefix": "app3 init",
+    "body": [
+      "use bevy::prelude::*;\n",
+      "fn main() {",
+      "\tApp::new()",
+      "\t\t.add_plugins(DefaultPlugins)",
+      "\t\t.add_startup_system(setup_system)",
+      "\t\t.run()",
+      "}\n",
+      "fn setup_system(mut commands: Commands) {",
+      "\tcommands.spawn(Camera3dBundle::default());",
+      "}"
+    ]
+  },
+  "Plugin Init": {
+    "prefix": "plugin init",
+    "body": [
+      "use bevy::prelude::*;\n",
+      "pub struct ${1};\n",
+      "impl Plugin for ${1} {",
+      "\tfn build(&self, app: &mut App) {",
+      "\t\t${0}",
+      "\t}",
+      "}"
+    ]
+  },
+  "Add System": {
+    "prefix": "add system",
+    "body": ["fn ${1}(mut commands: Commands) {", "$\t{0}", "}"]
+  }
+}
