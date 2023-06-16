@@ -13,14 +13,14 @@ Available on:
 
 ### Inits
 
-| Snippet            | Description                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| `use bevy prelude` | Imports the Bevy Engine's prelude.                                                         |
-| `app init`         | Initializes a Bevy application with default plugins and runs it.                           |
-| `app2 init`        | Initializes a Bevy application for 2D rendering with default plugins and a startup system. |
-| `app3 init`        | Initializes a Bevy application for 3D rendering with default plugins and a startup system. |
-| `plugin init`      | Provides a template for initializing a Bevy plugin.                                        |
-| `add system`       | Provides a template for adding a system to Bevy.                                           |
+| Snippet        | Description                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| `bevy prelude` | Imports the Bevy Engine's prelude.                                                         |
+| `app init`     | Initializes a Bevy application with default plugins and runs it.                           |
+| `app2 init`    | Initializes a Bevy application for 2D rendering with default plugins and a startup system. |
+| `app3 init`    | Initializes a Bevy application for 3D rendering with default plugins and a startup system. |
+| `plugin init`  | Provides a template for initializing a Bevy plugin.                                        |
+| `add system`   | Provides a template for adding a system to Bevy.                                           |
 
 ### Components
 

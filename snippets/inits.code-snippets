@@ -1,6 +1,6 @@
 {
   "Use Bevy prelude": {
-    "prefix": "use bevy prelude",
+    "prefix": "bevy prelude",
     "body": "use bevy::prelude::*;"
   },
   "App Init": {
