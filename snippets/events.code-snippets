@@ -9,6 +9,6 @@
   },
   "Event Handle": {
     "prefix": "event handle",
-    "body": ["for ${0} in ${1}.iter() {\n", "}"]
+    "body": ["for ${2} in ${1}.iter() {\n${0}", "}"]
   }
 }

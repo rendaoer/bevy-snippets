@@ -21,7 +21,7 @@
   },
   "Res NextState": {
     "prefix": "res nextstate",
-    "body": "mut ${1}: ResMut<NextState<{0}>>"
+    "body": "mut ${1}: ResMut<NextState<${0}>>"
   },
   "Res Input KeyCode": {
     "prefix": "res keycode",
