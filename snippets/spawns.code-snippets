@@ -81,11 +81,28 @@
       "));"
     ]
   },
-  "Commands Spawn Sprite": {
-    "prefix": "spawn sprite",
+  "Commands Spawn Sprite Texture": {
+    "prefix": "spawn sprite texture",
     "body": [
       "commands.spawn(SpriteBundle {",
       "\ttexture: ${1},",
+      "\ttransform: Transform {",
+      "\t\ttranslation: Vec3::default(),",
+      "\t\t..default()",
+      "\t},",
+      "\t..default()",
+      "});"
+    ]
+  },
+  "Commands Spawn Sprite Sprite": {
+    "prefix": "spawn sprite sprite",
+    "body": [
+      "commands.spawn(SpriteBundle {",
+      "\tsprite: Sprite {",
+      "\t\tcolor: ${2},",
+      "\t\tcustom_size: Some(Vec2::new(${1}, ${0})),",
+      "\t\t..default()",
+      "\t},",
       "\ttransform: Transform {",
       "\t\ttranslation: Vec3::default(),",
       "\t\t..default()",

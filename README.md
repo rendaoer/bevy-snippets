@@ -32,14 +32,15 @@ Available on:
 
 ### Spawns
 
-| Snippet              | Description                                                                                                                                                           |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `spawn node`         | Spawns a node entity with the `NodeBundle` component and sets its style and background color.                                                                         |
-| `spawn node flex`    | Spawns a node entity with the `NodeBundle` component, sets its style to flex layout, and sets its size and background color.                                          |
-| `spawn button`       | Spawns a button entity with the `ButtonBundle` component, sets its style, and sets its size, layout, and background color.                                            |
-| `spawn button image` | Spawns a button entity with an image using the `ButtonBundle` component, sets the image's texture, style, size, layout, and background color.                         |
-| `spawn text section` | Spawns a text entity with a specific section using the `TextBundle::from_section` method, sets the section, text style properties such as font, font size, and color. |
-| `spawn sprite`       | Spawns a sprite entity using the `SpriteBundle` component, sets the sprite's texture and transform properties such as translation.                                    |
+| Snippet                         | Description                                                                                                                                                                                                                                                            |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `spawn node`                    | Spawns a node entity with the `NodeBundle` component and sets its style and background color.                                                                                                                                                                          |
+| `spawn node flex`               | Spawns a node entity with the `NodeBundle` component, sets its style to flex layout, and sets its size and background color.                                                                                                                                           |
+| `spawn button`                  | Spawns a button entity with the `ButtonBundle` component, sets its style, and sets its size, layout, and background color.                                                                                                                                             |
+| `spawn button image`            | Spawns a button entity with an image using the `ButtonBundle` component, sets the image's texture, style, size, layout, and background color.                                                                                                                          |
+| `spawn text section`            | Spawns a text entity with a specific section using the `TextBundle::from_section` method, sets the section, text style properties such as font, font size, and color.                                                                                                  |
+| `Commands Spawn Sprite Texture` | Spawns a new sprite entity with a texture. It uses the `commands.spawn` function and passes a `SpriteBundle` with the specified texture and default transform and sprite values. The `texture` is set to `${1}`.                                                       |
+| `Commands Spawn Sprite Sprite`  | Spawns a new sprite entity with a sprite. It uses the `commands.spawn` function and passes a `SpriteBundle` with the specified sprite size, color, and default transform values. The `custom_size` is set to `Vec2::new(${1}, ${0})` and the `color` is set to `${2}`. |
 
 ### Params
 
