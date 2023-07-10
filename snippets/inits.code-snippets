@@ -13,36 +13,6 @@
       "\t\t.run()"
     ]
   },
-  "App 2D Init": {
-    "prefix": "app2 init",
-    "body": [
-      "use bevy::prelude::*;",
-      "fn main() {",
-      "\tApp::new()",
-      "\t\t.add_plugins(DefaultPlugins)",
-      "\t\t.add_startup_system(setup_system)",
-      "\t\t.run()",
-      "}\n",
-      "fn setup_system(mut commands: Commands) {",
-      "\tcommands.spawn(Camera2dBundle::default());",
-      "}"
-    ]
-  },
-  "App 3D Init": {
-    "prefix": "app3 init",
-    "body": [
-      "use bevy::prelude::*;\n",
-      "fn main() {",
-      "\tApp::new()",
-      "\t\t.add_plugins(DefaultPlugins)",
-      "\t\t.add_startup_system(setup_system)",
-      "\t\t.run()",
-      "}\n",
-      "fn setup_system(mut commands: Commands) {",
-      "\tcommands.spawn(Camera3dBundle::default());",
-      "}"
-    ]
-  },
   "Plugin Init": {
     "prefix": "plugin init",
     "body": [

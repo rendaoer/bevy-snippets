@@ -34,10 +34,6 @@
       },
       {
         "language": "rust",
-        "path": "./snippets/spawns.code-snippets"
-      },
-      {
-        "language": "rust",
         "path": "./snippets/params.code-snippets"
       },
       {

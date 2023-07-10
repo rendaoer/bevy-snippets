@@ -13,14 +13,12 @@ Available on:
 
 ### Inits
 
-| Snippet        | Description                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| `bevy prelude` | Imports the Bevy Engine's prelude.                                                         |
-| `app init`     | Initializes a Bevy application with default plugins and runs it.                           |
-| `app2 init`    | Initializes a Bevy application for 2D rendering with default plugins and a startup system. |
-| `app3 init`    | Initializes a Bevy application for 3D rendering with default plugins and a startup system. |
-| `plugin init`  | Provides a template for initializing a Bevy plugin.                                        |
-| `add system`   | Provides a template for adding a system to Bevy.                                           |
+| Snippet        | Description                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| `bevy prelude` | Imports the Bevy Engine's prelude.                               |
+| `app init`     | Initializes a Bevy application with default plugins and runs it. |
+| `plugin init`  | Provides a template for initializing a Bevy plugin.              |
+| `add system`   | Provides a template for adding a system to Bevy.                 |
 
 ### Components
 
@@ -29,18 +27,6 @@ Available on:
 | `component struct` | Generates a component struct with the `#[derive(Component)]` attribute.                        |
 | `component enum`   | Generates a component enum with the `#[derive(Component)]` attribute.                          |
 | `state enum`       | Generates a state enum with various attributes such as `#[derive(States)]`, `#[default]`, etc. |
-
-### Spawns
-
-| Snippet                         | Description                                                                                                                                                                                                                                                            |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `spawn node`                    | Spawns a node entity with the `NodeBundle` component and sets its style and background color.                                                                                                                                                                          |
-| `spawn node flex`               | Spawns a node entity with the `NodeBundle` component, sets its style to flex layout, and sets its size and background color.                                                                                                                                           |
-| `spawn button`                  | Spawns a button entity with the `ButtonBundle` component, sets its style, and sets its size, layout, and background color.                                                                                                                                             |
-| `spawn button image`            | Spawns a button entity with an image using the `ButtonBundle` component, sets the image's texture, style, size, layout, and background color.                                                                                                                          |
-| `spawn text section`            | Spawns a text entity with a specific section using the `TextBundle::from_section` method, sets the section, text style properties such as font, font size, and color.                                                                                                  |
-| `Commands Spawn Sprite Texture` | Spawns a new sprite entity with a texture. It uses the `commands.spawn` function and passes a `SpriteBundle` with the specified texture and default transform and sprite values. The `texture` is set to `${1}`.                                                       |
-| `Commands Spawn Sprite Sprite`  | Spawns a new sprite entity with a sprite. It uses the `commands.spawn` function and passes a `SpriteBundle` with the specified sprite size, color, and default transform values. The `custom_size` is set to `Vec2::new(${1}, ${0})` and the `color` is set to `${2}`. |
 
 ### Params
 
